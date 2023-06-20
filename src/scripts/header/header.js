@@ -20,18 +20,25 @@ const sunSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" f
 
 export function Header() {
     /** MOBILE NAV TOGGLE */
+
     document.querySelector("[data-mobile-toggle]").addEventListener("click", () => {
         let menu = document.querySelector(".mobile-menu")
         if (menu.classList.contains("hidden")) {
+
             menu.classList.remove("hidden")
             menu.classList.remove("animate-slit-out-vertical")
+
             menu.classList.add("animate-slit-in-vertical")
+
+
         } else {
             menu.classList.remove("animate-slit-in-vertical")
+
             menu.classList.add("animate-slit-out-vertical")
+            
             menu.addEventListener("animationend" , () => {
                 menu.classList.add("hidden")
-            }, {once: true})
+            } , {once: true})
         }
     })
 
