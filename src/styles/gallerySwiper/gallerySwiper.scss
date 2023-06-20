@@ -1,0 +1,145 @@
+section.section__slider {
+    .swiper-container {
+      @apply bg-slate-50 dark:bg-slate-950/10;
+      position: relative;
+      .swiper-wrapper {
+        @apply bg-slate-50 dark:bg-slate-950/10;
+        width: 100vw;
+        position: relative;
+        .swiper-slide {
+          .swiper-slide__wrapper {
+            padding-bottom: 100px;
+            @media (min-width: 1024px) {
+              @apply p-10 xl:p-14 2xl:p-16;
+              display: grid;
+              @apply grid-cols-5 mx-auto my-20;
+              gap: 2.5rem;
+              max-width: 90%;
+            }
+            .slide__image {
+              overflow: hidden;
+              @media (min-width: 1024px) {
+                height: 600px;
+                @apply col-span-3;
+              }
+              img {
+                @apply hover:scale-110 transition-all hover:opacity-90;
+                object-fit: cover;
+                height: auto;
+                max-height: 40vh;
+                width: 100%;
+                @media (min-width: 1024px) {
+                  max-height: none;
+                  height: 100%;
+                }
+              }
+            }
+            .slide__description {
+              position: relative;
+              & > * {
+                position: relative;
+                z-index: 10;
+              }
+              @media (min-width: 1024px) {
+                @apply col-span-2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0;
+                &::before {
+                  top: 0;
+                  left: -2.5rem;
+                  display: block;
+                  position: absolute;
+                  width: 12rem;
+                  content: "";
+                  z-index: 0;
+                  height: 100%;
+                  background-color: #e4e4e453;
+                  .dark & {
+                    background-color: rgb(30 41 59);
+                  }
+                }
+              }
+              padding: 1rem 3rem 0 1.5rem;
+  
+              .slide__description-title {
+                @apply text-6xl lg:text-7xl text-slate-900;
+                font-weight: 500;
+                .dark & {
+                  @apply text-slate-200;
+                }
+              }
+  
+              .slide__description-features {
+                margin-top: 0.75rem;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.55rem;
+                .slide__description-features-item {
+                  @apply bg-slate-200/70 text-slate-800/80 rounded-2xl lg:text-lg;
+                  padding: 0 0.6rem;
+                  .dark & {
+                    @apply bg-slate-600 text-slate-300;
+                  }
+                }
+              }
+  
+              .slide__description-content {
+                margin: 0.8rem 0;
+                @apply text-base lg:text-xl;
+                @apply text-slate-800;
+                .dark & {
+                  @apply text-slate-300;
+                }
+              }
+  
+              .slide__description-watch {
+                cursor: pointer;
+                @apply text-xl text-blue-800;
+                text-decoration: underline;
+                .dark & {
+                  @apply text-blue-700;
+                }
+              }
+            }
+          }
+        }
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        z-index: 1000;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-image: none;
+        @apply bg-slate-100 dark:bg-slate-700 dark:text-slate-400;
+        z-index: 1000;
+        cursor: pointer;
+        @media (min-width: 1024px) {
+          transform: scale(1.5);
+          
+        }
+      }
+  
+      .swiper-button-next {
+        top: 0;
+        right: 0;
+        @media (min-width: 1024px) {
+          top:12.5px;
+          right: 12.5px;
+        }
+      }
+      .swiper-button-prev {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        @media (min-width: 1024px) {
+          bottom:12.5px;
+          left: 12.5px;
+          
+        }
+      }
+    }
+  }
+  
