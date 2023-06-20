@@ -1,28 +1,44 @@
-import Swiper, { Autoplay, Navigation } from 'swiper';
+import Swiper, { Autoplay, Navigation } from "swiper";
 
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import 'photoswipe/style.css';
-
+import PhotoSwipeLightbox from "photoswipe/lightbox";
+import "photoswipe/style.css";
 
 export function GallerySwider() {
-    let swiperOptions = {
-        centeredSlides: true,
-        spaceBetween: "100%",
-        autoHeight: true,
-        direction: "horizontal",
-        slidesPerView: 1,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        speed: 500,
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: true
-        // },
-        modules: [Autoplay, Navigation],
-        loop: true
-    };
+  let swiperOptions = {
+    centeredSlides: true,
+    spaceBetween: "100%",
+    autoHeight: true,
+    direction: "horizontal",
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    speed: 500,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: true
+    // },
+    modules: [Autoplay, Navigation],
+    loop: true,
+  };
+  new Swiper(".swiper-container", swiperOptions);
 
-    new Swiper(".swiper-container", swiperOptions);
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: ".swiper-slide__1",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+    showAnimationDuration: 500,
+    padding: { top: 20, bottom: 20, left: 0, right: 0 },
+  });
+  lightbox.init();
+
+  document.querySelector("#gallery").addEventListener("click", (e) => {
+    let toggleOpen = e.target.dataset.galleryOpen;
+    if (toggleOpen) {
+      lightbox.loadAndOpen(0, {
+        gallery: document.querySelector(`.swiper-slide__${toggleOpen[0]}`),
+      });
+    }
+  });
 }

@@ -44,30 +44,30 @@ export function Header() {
 
     /** SCROLL UP / DOWN TOGGLE */
 
-    const body = document.querySelector("#app");
+    const app = document.querySelector("#app");
     let lastScroll = 200;
     window.addEventListener("scroll", () => {
         const currentScroll = window.scrollY;
         if (currentScroll == 0) {
-            body.classList.remove("scroll-up");
-            body.classList.remove("scroll-down");
+            app.classList.remove("scroll-up");
+            app.classList.remove("scroll-down");
             return;
 
         }
         if (currentScroll <= 200) {
-            body.classList.remove("scroll-up");
-            body.classList.add("scroll-up");
+            app.classList.remove("scroll-up");
+            app.classList.add("scroll-up");
             return;
         }
-        if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-            body.classList.remove("scroll-up");
-            body.classList.add("scroll-down");
+        if (currentScroll > lastScroll && !app.classList.contains("scroll-down")) {
+            app.classList.remove("scroll-up");
+            app.classList.add("scroll-down");
         } else if (
             currentScroll < lastScroll &&
-            body.classList.contains("scroll-down")
+            app.classList.contains("scroll-down")
         ) {
-            body.classList.remove("scroll-down");
-            body.classList.add("scroll-up");
+            app.classList.remove("scroll-down");
+            app.classList.add("scroll-up");
         }
         lastScroll = currentScroll;
     });
@@ -76,8 +76,14 @@ export function Header() {
 
     let darkThemeButton = document.querySelector("#change-theme-dark")
     darkThemeButton.innerHTML = `${moonSvg}`
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        app.classList.toggle("dark")
+        darkThemeButton.innerHTML = `${sunSvg}`
+    } 
+
     darkThemeButton.addEventListener("click", () => {
-        if (body.classList.toggle("dark")) {
+        if (app.classList.toggle("dark")) {
             darkThemeButton.innerHTML = `${moonSvg}`;
             darkThemeButton.innerHTML = `${sunSvg}`
 

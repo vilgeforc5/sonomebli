@@ -1,3 +1,7 @@
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
+
 export function Description(){
     let desc = document.querySelector("#description");
     desc.addEventListener("click", (e) => {
@@ -16,4 +20,12 @@ export function Description(){
             }
         } 
     })
+
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: "#description_gallery",
+        children: "a",
+        pswpModule: () => import("photoswipe")
+      });
+      lightbox.init();
 }
