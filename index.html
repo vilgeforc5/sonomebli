@@ -1,457 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" src="/src/scripts/main.js"></script>
 
-  </head>
-  <body>
-    <div class="overflow-hidden max-w-[100vw]" id="app">
-      <!-- SECTION HEADER -->
-      
-      <header>
-        <nav
-          class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 md:py-3 lg:py-4 dark:bg-slate-950">
-          <div
-            class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <a href="#" class="flex items-center">
-              <div
-                class="mr-3 aspect-square h-6 sm:h-7  bg-orange-600 rounded-full">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <script type="module" src="/src/scripts/main.js"></script>
 
-              </div>
-              <span
-                class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SonoMebli</span>
-            </a>
+</head>
 
-            <div class="flex items-center lg:order-2">
-              <button type="button"
-                data-mobile-toggle
-                class=" inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                <svg class="hidden w-6 h-6" fill="currentColor"
-                  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </button>
-              <button id="change-theme-dark" type="button"
-                class="focus:ring-0 inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none  focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"></button>
+<body>
+  <div class="overflow-hidden max-w-[100vw]" id="app">
+    <!-- SECTION HEADER -->
+    <header>
+      <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 md:py-3 lg:py-4 dark:bg-slate-950">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+          <a href="#" class="flex items-center">
+            <div class="mr-3 aspect-square h-6 sm:h-7  bg-orange-600 rounded-full">
+
             </div>
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SonoMebli</span>
+          </a>
+
+          <div class="flex items-center lg:order-2">
+            <button type="button" data-mobile-toggle
+              class=" inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <button id="change-theme-dark" type="button"
+              class="focus:ring-0 inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none  focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"></button>
+          </div>
+          <div class="hidden   justify-between items-center w-full lg:flex lg:w-auto lg:order-1 mobile-menu">
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              <li>
+                <a href="#main"
+                  class="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-500 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  aria-current="page">Главная</a>
+              </li>
+              <li>
+                <a href="#about"
+                  class="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-500 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">О
+                  нас</a>
+              </li>
+              <li>
+                <a href="#gallery"
+                  class="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-500 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Продукция
+                </a>
+              </li>
+              <li>
+                <a href="#contacts"
+                  class="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-500 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- SECTION HEADING -->
+      <section class="pt-14" id="main">
+        <div class="relative dark:bg-slate-950">
+          <div class="grid grid-cols-2 ">
             <div
-              class="hidden   justify-between items-center w-full lg:flex lg:w-auto lg:order-1 mobile-menu">
-              <ul
-                class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                <li>
-                  <a href="#main"
-                    class="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-500 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                    aria-current="page">Главная</a>
-                </li>
-                <li>
-                  <a href="#about"
-                    class="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-500 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">О
-                    нас</a>
-                </li>
-                <li>
-                  <a href="#gallery"
-                    class="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-500 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Продукция
-                  </a>
-                </li>
-                <li>
-                  <a href="#contacts"
-                    class="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-500 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Контакты</a>
-                </li>
-              </ul>
+              class="my-10 mx-4 md:mx-8 max-md:col-span-2 md:flex-col md:flex md:justify-center md:items-center md:pb-20">
+              <p class="dark:text-slate-50   text-center text-3xl md:text-4xl lg:text-5xl  xl:text-6xl">
+                МЕБЛІ, ЯКI ПОДОБАЮТЬСЯ ВСІМ
+              </p>
+              <p class="dark:text-zinc-300 mt-4 text-base xl:text-lg 2xl:text-xl  text-center ">
+                Індивідуальний дизайн та висока якість -
+                <!-- FONT COLOR CHANGE -->
+                <span font-heading-change class="dark:text-orange-300 text-orange-500">
+                  Sonomebli
+                </span>
+              </p>
+            </div>
+            <div class="hidden md:block md:p-8 lg:p-10 xl:p-12  ">
+              <div class=" grid grid-cols-2 grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-2  gap-2 2xl:gap-3">
+                <div class=" aspect-square">
+                  <img class="w-full h-full rounded-lg object-cover" src="/topGalleryImages/1.png">
+                </div>
+                <div class=" aspect-square">
+                  <img class="w-full h-full rounded-lg object-cover" src="/topGalleryImages/4.png">
+
+                </div>
+                <div class=" aspect-square">
+                  <img class="w-full h-full rounded-lg object-cover" src="/topGalleryImages/3.png">
+
+                </div>
+                <div class=" aspect-square">
+                  <img class="w-full h-full rounded-lg object-cover" src="/topGalleryImages/2.png">
+
+                </div>
+                <div class=" aspect-square max-2xl:hidden">
+                  <img class="w-full h-full rounded-lg object-cover" src="/topGalleryImages/5.png">
+
+                </div>
+                <div class=" aspect-square max-2xl:hidden">
+                  <img class="w-full h-full rounded-lg object-cover" src="/topGalleryImages/6.png">
+                </div>
+              </div>
             </div>
           </div>
-        </nav>
-      </header>
-      <main>
-        <!-- SECTION HEADING -->
-        <section class="pt-14" id="main">
-          <div class="relative dark:bg-slate-950">
-            <div class="grid grid-cols-2 ">
-              <div
-                class="my-10 mx-4 md:mx-8 max-md:col-span-2 md:flex-col md:flex md:justify-center md:items-center md:pb-20">
-                <p
-                  class="dark:text-slate-50   text-center text-3xl md:text-4xl lg:text-5xl  xl:text-6xl">
-                  МЕБЛІ, ЯКI ПОДОБАЮТЬСЯ ВСІМ
-                </p>
-                <p
-                  class="dark:text-zinc-300 mt-4 text-base xl:text-lg 2xl:text-xl  text-center ">
-                  Індивідуальний дизайн та висока якість -
-                  <!-- FONT COLOR CHANGE -->
-                  <span font-heading-change
-                    class="dark:text-orange-300 text-orange-500">
-                    Sonomebli
-                  </span>
-                </p>
+          <div class="absolute z-0 bottom-0 bg-slate-100 dark:bg-slate-900 h-24 md:hidden  w-[100vw]">
+          </div>
+          <!-- SWIPER -->
+          <div class=" md:absolute -bottom-28 md:-bottom-20 ">
+            <div class="swiper-heading w-screen ">
+              <div class="swiper-wrapper  ">
+                <div class="swiper-slide ">
+                  <div class="md:w-[50vw] px-4 md:px-8 ">
+                    <img
+                      class="max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-[38rem] max-h-56 lg:max-h-72 mx-auto   w-full "
+                      src="/slider1/1.webp" alt="sofa" />
+                  </div>
+                </div>
+                <div class="swiper-slide ">
+                  <div class="md:w-[50vw] px-4 md:px-8">
+                    <img
+                      class="max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-[38rem] max-h-56 lg:max-h-72  mx-auto  w-full "
+                      src="/slider1/2.png" alt="sofa" />
+                  </div>
+                </div>
+                <div class="swiper-slide ">
+                  <div class="md:w-[50vw] px-4 md:px-8">
+                    <img
+                      class="max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-[38rem] max-h-56 lg:max-h-72  mx-auto  w-full "
+                      src="/slider1/3.png" alt="sofa" />
+                  </div>
+                </div>
               </div>
-              <div class="hidden md:block md:p-8 lg:p-10 xl:p-12  ">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION ABOUT -->
+      <section id="about">
+        <div
+          class="relative overflow-hidden bg-slate-100 dark:bg-slate-900 pl-6 pr-2 xl:pl-10 py-20 pb-10 sm:pb-20 md:pt-36 lg:py-32 lg:overflow-visible lg:px-0 ">
+          <div
+            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2  lg:items-start lg:gap-y-10 2xl:ml-10">
+            <div
+              class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-[100rem] lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div class="lg:pr-4">
+                <div class="lg:max-w-lg">
+                  <p class="text-base font-semibold leading-7 text-orange-700">Обирайте
+                    найкраще</p>
+                  <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-slate-100">Що
+                    ми робимо?</h1>
+                  <p class="mt-6 text-xl leading-8 text-gray-700 dark:text-slate-300">SonoMebli
+                    співпрацює з передовими компаніями України та Європи з
+                    виробництва серійних меблів на
+                    замовлення. До нас можна завжди звернутися за допомогою у
+                    підборі відповідного варіанта меблевої
+                    продукції для свого дизайну інтер'єру.</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="-ml-12 -mt-12 p-10 pb-0 lg:p-10 lg:sticky lg:top-1/4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+              <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                src="https://remoskop.ru/wp-content/uploads/2019/07/post_5d1f04f59e7b1.jpeg" alt>
+            </div>
+            <div
+              class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-[100rem] lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div class="lg:pr-4">
+                <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg xl:max-w-2xl">
+                  <ul class="mt-8 gap-y-8 text-gray-700 dark:text-gray-300 flex flex-col">
+                    <li class="flex gap-x-3 mt-4">
+                      <svg class="mt-1 h-5 w-5 flex-none text-orange-700" viewBox="0 0 20 20" fill="currentColor"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M15.988 3.012A2.25 2.25 0 0118 5.25v6.5A2.25 2.25 0 0115.75 14H13.5V7A2.5 2.5 0 0011 4.5H8.128a2.252 2.252 0 011.884-1.488A2.25 2.25 0 0112.25 1h1.5a2.25 2.25 0 012.238 2.012zM11.5 3.25a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.25h-3v-.25z"
+                          clip-rule="evenodd" />
+                        <path fill-rule="evenodd"
+                          d="M2 7a1 1 0 011-1h8a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V7zm2 3.25a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75zm0 3.5a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75z"
+                          clip-rule="evenodd" />
+                      </svg>
+                      <span><strong class="font-semibold text-gray-900 dark:text-gray-300">Консультацію
+                          та проектування.</strong> На цьому етапі клієнти
+                        обговорюють свої побажання та потреби з
+                        нашими фахівцями. Дизайнери та конструктори створюють
+                        плани та ескізи майбутніх меблів. Усі деталі
+                        ескізів узгоджуються із клієнтом</span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg class="mt-1 h-5 w-5 flex-none text-orange-700" viewBox="0 0 20 20" fill="currentColor"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M3.5 2A1.5 1.5 0 002 3.5V15a3 3 0 106 0V3.5A1.5 1.5 0 006.5 2h-3zm11.753 6.99L9.5 14.743V6.257l1.51-1.51a1.5 1.5 0 012.122 0l2.121 2.121a1.5 1.5 0 010 2.122zM8.364 18H16.5a1.5 1.5 0 001.5-1.5v-3a1.5 1.5 0 00-1.5-1.5h-2.136l-6 6zM5 16a1 1 0 100-2 1 1 0 000 2z"
+                          clip-rule="evenodd" />
+                      </svg>
+                      <span><strong class="font-semibold text-gray-900 dark:text-gray-300">Вибір
+                          матеріалів та кольору.</strong> В асортименті є
+                        велика
+                        палітра кольорів та тип матеріалу, де клієнт може
+                        підібрати потрібний варіант. До того ж є можливість
+                        підбору фурнітури</span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg class="mt-1 h-5 w-5 flex-none text-orange-700" viewBox="0 0 20 20" fill="currentColor"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M14.5 10a4.5 4.5 0 004.284-5.882c-.105-.324-.51-.391-.752-.15L15.34 6.66a.454.454 0 01-.493.11 3.01 3.01 0 01-1.618-1.616.455.455 0 01.11-.494l2.694-2.692c.24-.241.174-.647-.15-.752a4.5 4.5 0 00-5.873 4.575c.055.873-.128 1.808-.8 2.368l-7.23 6.024a2.724 2.724 0 103.837 3.837l6.024-7.23c.56-.672 1.495-.855 2.368-.8.096.007.193.01.291.01zM5 16a1 1 0 11-2 0 1 1 0 012 0z"
+                          clip-rule="evenodd" />
+                        <path
+                          d="M14.5 11.5c.173 0 .345-.007.514-.022l3.754 3.754a2.5 2.5 0 01-3.536 3.536l-4.41-4.41 2.172-2.607c.052-.063.147-.138.342-.196.202-.06.469-.087.777-.067.128.008.257.012.387.012zM6 4.586l2.33 2.33a.452.452 0 01-.08.09L6.8 8.214 4.586 6H3.309a.5.5 0 01-.447-.276l-1.7-3.402a.5.5 0 01.093-.577l.49-.49a.5.5 0 01.577-.094l3.402 1.7A.5.5 0 016 3.31v1.277z" />
+                      </svg>
+                      <span><strong class="font-semibold text-gray-900 dark:text-gray-300">Виготовлення.</strong>
+                        Процес виготовлення меблів відбувається відповідно до
+                        встановлених та обумовлених
+                        заздалегідь термінів</span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg class="mt-1 h-5 w-5 flex-none text-orange-700" viewBox="0 0 20 20" fill="currentColor"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+                          clip-rule="evenodd" />
+                      </svg>
+                      <span><strong class="font-semibold text-gray-900 dark:text-gray-300">Доставка
+                          та встановлення.</strong>
+                        Компанія своїм транспортом доставляє готову меблеву
+                        продукцію клієнту.
+                        Установка меблів та перевірка проводиться нашими
+                        фахівцями</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION DESCRIPTION -->
+      <section id="description">
+        <div class="bg-slate-100 dark:bg-slate-900 pt-6">
+          <div
+            class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 lg:gap-x-16 py-6 pl-6 pr-4 sm:py-6 xl:py-10 lg:max-w-full 2xl:py-12 xl:max-w-[90vw] lg:grid-cols-2 lg:px-8">
+            <div>
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
+                Шафу? А може гардероб?
+              </h2>
+              <p class="mt-4 text-gray-700 dark:text-slate-300">
+                Наша компанія давно займається виготовленням якісних та
+                сучасних
+                меблів <span class="underline text-gray-800 dark:text-slate-300 ">на
+                  замовлення</span>. За
+                допомогою меблевої продукції власного виготовлення вдається
+                отримати гармонійний і зручний простір.
+                <br />
+                SonoMebli співпрацює з <span class="underline text-gray-800 dark:text-slate-300">передовими
+                  компаніями</span> України та Європи з
+                виробництва серійних меблів на
+                замовлення. До нас можна завжди <span class="underline text-gray-800 dark:text-slate-300">звернутися
+                  за допомогою</span> у
+                підборі відповідного варіанта меблевої
+                продукції для свого дизайну інтер'єру.
+              </p>
+              <dl class="mt-6 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-6 ">
+                <div class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600 orange-700 h-fit">
+                  <div data-description-collapse="close"
+                    class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/20 rounded-lg p-3 cursor-pointer">
+                    <p
+                      class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
+                      Кухні
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                      class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200   transition-all rotate-180">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </div>
+                  <div class="grid  grid-rows-[1fr] h-fit overflow-hidden transition-all">
+                    <div class="overflow-hidden">
+                      <p
+                        class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
+                        SonoMebli здатна створити кухню вашої мрії, яка буде
+                        поєднувати у собі красу та зручність
+                        використання
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600 orange-700 h-fit">
+                  <div data-description-collapse="close"
+                    class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/10 rounded-lg p-3 cursor-pointer">
+                    <p
+                      class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
+                      Меблі для ванної кімнати
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                      class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200   transition-all rotate-180">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </div>
+                  <div class="grid  grid-rows-[1fr] h-fit overflow-hidden transition-all">
+                    <div class="overflow-hidden">
+                      <p
+                        class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
+                        Відмінне рішення для тих, хто хоче максимально
+                        ефективно
+                        використовувати простір і створити унікальний стиль у
+                        ванній кімнаті.
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 <div
-                  class=" grid grid-cols-2 grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-2  gap-2 2xl:gap-3">
-                  <div class=" aspect-square">
-                    <img class="w-full h-full rounded-lg object-cover"
-                      src="/topGalleryImages/1.png">
+                  class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600  dark:border-slate-600orange-700 h-fit">
+                  <div data-description-collapse="open"
+                    class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/10 rounded-lg p-3 cursor-pointer">
+                    <p
+                      class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
+                      Столи
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                      class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200  transition-all">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
                   </div>
-                  <div class=" aspect-square">
-                    <img class="w-full h-full rounded-lg object-cover"
-                      src="/topGalleryImages/4.png">
-
-                  </div>
-                  <div class=" aspect-square">
-                    <img class="w-full h-full rounded-lg object-cover"
-                      src="/topGalleryImages/3.png">
-
-                  </div>
-                  <div class=" aspect-square">
-                    <img class="w-full h-full rounded-lg object-cover"
-                      src="/topGalleryImages/2.png">
-
-                  </div>
-                  <div class=" aspect-square max-2xl:hidden">
-                    <img class="w-full h-full rounded-lg object-cover"
-                      src="/topGalleryImages/5.png">
-
-                  </div>
-                  <div class=" aspect-square max-2xl:hidden">
-                    <img class="w-full h-full rounded-lg object-cover"
-                      src="/topGalleryImages/6.png">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="absolute z-0 bottom-0 bg-slate-100 dark:bg-slate-900 h-24 md:hidden  w-[100vw]">
-            </div>
-            <!-- SWIPER -->
-            <div class=" md:absolute -bottom-28 md:-bottom-20 ">
-              <div class="swiper-heading w-screen ">
-                <div class="swiper-wrapper  ">
-                  <div class="swiper-slide ">
-                    <div class="md:w-[50vw] px-4 md:px-8 ">
-                      <img
-                        class="max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-[38rem] max-h-56 lg:max-h-72 mx-auto   w-full "
-                        src="/slider1/1.webp" alt="sofa" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide ">
-                    <div class="md:w-[50vw] px-4 md:px-8">
-                      <img
-                        class="max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-[38rem] max-h-56 lg:max-h-72  mx-auto  w-full "
-                        src="/slider1/2.png" alt="sofa" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide ">
-                    <div class="md:w-[50vw] px-4 md:px-8">
-                      <img
-                        class="max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-[38rem] max-h-56 lg:max-h-72  mx-auto  w-full "
-                        src="/slider1/3.png" alt="sofa" />
+                  <div class="grid  grid-rows-[0fr] h-fit overflow-hidden transition-all">
+                    <div class="overflow-hidden">
+                      <p
+                        class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
+                        Наша компанія виготовить стіл будь-якої форми та
+                        призначення, що відповідає індивідуальним
+                        потребам та особливостям оформлення інтер'єру. </p>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600 orange-700 h-fit">
+                  <div data-description-collapse="open"
+                    class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/10 rounded-lg p-3 cursor-pointer">
+                    <p
+                      class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
+                      Шафи
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                      class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200   transition-all">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </div>
+                  <div class="grid  grid-rows-[0fr] h-fit overflow-hidden transition-all">
+                    <div class="overflow-hidden">
+                      <p
+                        class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
+                        Шафи на замовлення – стандартні та не стандартні
+                        моделі
+                        різного розміру та стилю, які ідеально
+                        впишуться до спальні або передпокою </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600  orange-700 h-fit">
+                  <div data-description-collapse="open"
+                    class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/10 rounded-lg p-3 cursor-pointer">
+                    <p
+                      class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
+                      Шафи купе
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                      class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200  cursor-pointer transition-all">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </div>
+                  <div class="grid  grid-rows-[0fr] h-fit overflow-hidden transition-all">
+                    <div class="overflow-hidden">
+                      <p
+                        class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
+                        Шафи-купе - зберігаємо місце у вашій кімнаті
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600 orange-700 h-fit">
+                  <div data-description-collapse="open"
+                    class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/10 rounded-lg p-3 cursor-pointer">
+                    <p
+                      class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
+                      Гардеробні
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                      class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200   transition-all">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </div>
+                  <div class="grid  grid-rows-[0fr] h-fit overflow-hidden transition-all">
+                    <div class="overflow-hidden">
+                      <p
+                        class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
+                        Гардеробні системи на замовлення, щоб усі речі знайшли
+                        своє місце.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </dl>
             </div>
+            <div id="description_gallery" class="grid grid-cols-2 grid-rows-2 gap-2 md:gap-4 ">
+              <a class="overflow-hidden rounded-lg" href="/images_gal/1.png" data-pswp-width="1500"
+                data-pswp-height="1300">
+                <img
+                  class="w-full h-full object-cover aspect-square rounded-lg bg-gray-100 hover:scale-110 transition-all hover:opacity-80"
+                  src="/images_gal/1.png" />
+              </a>
+              <a class="overflow-hidden rounded-lg" href="/images_gal/2.png" data-pswp-width="1500"
+                data-pswp-height="1300">
+                <img
+                  class="w-full h-full object-cover aspect-square rounded-lg bg-gray-100 hover:scale-110 transition-all hover:opacity-80"
+                  src="/images_gal/2.png" />
+              </a>
+              <a class="overflow-hidden rounded-lg" href="/images_gal/3.png" data-pswp-width="1500"
+                data-pswp-height="1300">
+                <img
+                  class="w-full h-full object-cover aspect-square rounded-lg bg-gray-100 hover:scale-110 transition-all hover:opacity-80"
+                  src="/images_gal/3.png" />
+              </a>
+              <a class="overflow-hidden rounded-lg" href="/images_gal/4.png" data-pswp-width="1500"
+                data-pswp-height="1300">
+                <img
+                  class="w-full h-full object-cover aspect-square rounded-lg bg-gray-100 hover:scale-110 transition-all hover:opacity-80"
+                  src="/images_gal/4.png" />
+              </a>
+            </div>
+
           </div>
-        </section>
-        <!-- SECTION ABOUT -->
-        <section id="about">
-          <div
-            class="relative overflow-hidden bg-slate-100 dark:bg-slate-900 pl-6 xl:pl-10 py-20 pb-10 sm:pb-20 md:pt-36 lg:py-32 lg:overflow-visible lg:px-0 ">
-            <div
-              class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2  lg:items-start lg:gap-y-10 2xl:ml-10">
-              <div
-                class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-[100rem] lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                <div class="lg:pr-4">
-                  <div class="lg:max-w-lg">
-                    <p class="text-base font-semibold leading-7 text-orange-700">Обирайте
-                      найкраще</p>
-                    <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-slate-100">Що
-                      ми робимо?</h1>
-                    <p class="mt-6 text-xl leading-8 text-gray-700 dark:text-slate-300">SonoMebli
-                      співпрацює з передовими компаніями України та Європи з
-                      виробництва серійних меблів на
-                      замовлення. До нас можна завжди звернутися за допомогою у
-                      підборі відповідного варіанта меблевої
-                      продукції для свого дизайну інтер'єру.</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="-ml-12 -mt-12 p-10 pb-0 lg:p-10 lg:sticky lg:top-1/4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-                  src="https://remoskop.ru/wp-content/uploads/2019/07/post_5d1f04f59e7b1.jpeg" alt>
-              </div>
-              <div
-                class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-[100rem] lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                <div class="lg:pr-4">
-                  <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg xl:max-w-2xl">
-                    <ul class="mt-8 gap-y-8 text-gray-700 dark:text-gray-300 flex flex-col">
-                      <li class="flex gap-x-3 mt-4">
-                        <svg class="mt-1 h-5 w-5 flex-none text-orange-700" viewBox="0 0 20 20" fill="currentColor"
-                          aria-hidden="true">
-                          <path fill-rule="evenodd"
-                            d="M15.988 3.012A2.25 2.25 0 0118 5.25v6.5A2.25 2.25 0 0115.75 14H13.5V7A2.5 2.5 0 0011 4.5H8.128a2.252 2.252 0 011.884-1.488A2.25 2.25 0 0112.25 1h1.5a2.25 2.25 0 012.238 2.012zM11.5 3.25a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v.25h-3v-.25z"
-                            clip-rule="evenodd" />
-                          <path fill-rule="evenodd"
-                            d="M2 7a1 1 0 011-1h8a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V7zm2 3.25a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75zm0 3.5a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75z"
-                            clip-rule="evenodd" />
-                        </svg>
-                        <span><strong class="font-semibold text-gray-900 dark:text-gray-300">Консультацію
-                            та проектування.</strong> На цьому етапі клієнти
-                          обговорюють свої побажання та потреби з
-                          нашими фахівцями. Дизайнери та конструктори створюють
-                          плани та ескізи майбутніх меблів. Усі деталі
-                          ескізів узгоджуються із клієнтом</span>
-                      </li>
-                      <li class="flex gap-x-3">
-                        <svg class="mt-1 h-5 w-5 flex-none text-orange-700" viewBox="0 0 20 20" fill="currentColor"
-                          aria-hidden="true">
-                          <path fill-rule="evenodd"
-                            d="M3.5 2A1.5 1.5 0 002 3.5V15a3 3 0 106 0V3.5A1.5 1.5 0 006.5 2h-3zm11.753 6.99L9.5 14.743V6.257l1.51-1.51a1.5 1.5 0 012.122 0l2.121 2.121a1.5 1.5 0 010 2.122zM8.364 18H16.5a1.5 1.5 0 001.5-1.5v-3a1.5 1.5 0 00-1.5-1.5h-2.136l-6 6zM5 16a1 1 0 100-2 1 1 0 000 2z"
-                            clip-rule="evenodd" />
-                        </svg>
-                        <span><strong class="font-semibold text-gray-900 dark:text-gray-300">Вибір
-                            матеріалів та кольору.</strong> В асортименті є
-                          велика
-                          палітра кольорів та тип матеріалу, де клієнт може
-                          підібрати потрібний варіант. До того ж є можливість
-                          підбору фурнітури</span>
-                      </li>
-                      <li class="flex gap-x-3">
-                        <svg class="mt-1 h-5 w-5 flex-none text-orange-700" viewBox="0 0 20 20" fill="currentColor"
-                          aria-hidden="true">
-                          <path fill-rule="evenodd"
-                            d="M14.5 10a4.5 4.5 0 004.284-5.882c-.105-.324-.51-.391-.752-.15L15.34 6.66a.454.454 0 01-.493.11 3.01 3.01 0 01-1.618-1.616.455.455 0 01.11-.494l2.694-2.692c.24-.241.174-.647-.15-.752a4.5 4.5 0 00-5.873 4.575c.055.873-.128 1.808-.8 2.368l-7.23 6.024a2.724 2.724 0 103.837 3.837l6.024-7.23c.56-.672 1.495-.855 2.368-.8.096.007.193.01.291.01zM5 16a1 1 0 11-2 0 1 1 0 012 0z"
-                            clip-rule="evenodd" />
-                          <path
-                            d="M14.5 11.5c.173 0 .345-.007.514-.022l3.754 3.754a2.5 2.5 0 01-3.536 3.536l-4.41-4.41 2.172-2.607c.052-.063.147-.138.342-.196.202-.06.469-.087.777-.067.128.008.257.012.387.012zM6 4.586l2.33 2.33a.452.452 0 01-.08.09L6.8 8.214 4.586 6H3.309a.5.5 0 01-.447-.276l-1.7-3.402a.5.5 0 01.093-.577l.49-.49a.5.5 0 01.577-.094l3.402 1.7A.5.5 0 016 3.31v1.277z" />
-                        </svg>
-                        <span><strong class="font-semibold text-gray-900 dark:text-gray-300">Виготовлення.</strong>
-                          Процес виготовлення меблів відбувається відповідно до
-                          встановлених та обумовлених
-                          заздалегідь термінів</span>
-                      </li>
-                      <li class="flex gap-x-3">
-                        <svg class="mt-1 h-5 w-5 flex-none text-orange-700" viewBox="0 0 20 20" fill="currentColor"
-                          aria-hidden="true">
-                          <path fill-rule="evenodd"
-                            d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
-                            clip-rule="evenodd" />
-                        </svg>
-                        <span><strong class="font-semibold text-gray-900 dark:text-gray-300">Доставка
-                            та встановлення.</strong>
-                          Компанія своїм транспортом доставляє готову меблеву
-                          продукцію клієнту.
-                          Установка меблів та перевірка проводиться нашими
-                          фахівцями</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- SECTION DESCRIPTION -->
-        <section id="description">
-          <div class="bg-slate-100 dark:bg-slate-900 pt-6">
-            <div
-              class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 lg:gap-x-16 py-6 pl-6 pr-4 sm:py-6 xl:py-10 lg:max-w-full 2xl:py-12 xl:max-w-[90vw] lg:grid-cols-2 lg:px-8">
-              <div>
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
-                  Шафу? А може гардероб?
-                </h2>
-                <p class="mt-4 text-gray-700 dark:text-slate-300">
-                  Наша компанія давно займається виготовленням якісних та
-                  сучасних
-                  меблів <span class="underline text-gray-800 dark:text-slate-300 ">на
-                    замовлення</span>. За
-                  допомогою меблевої продукції власного виготовлення вдається
-                  отримати гармонійний і зручний простір.
-                  <br />
-                  SonoMebli співпрацює з <span class="underline text-gray-800 dark:text-slate-300">передовими
-                    компаніями</span> України та Європи з
-                  виробництва серійних меблів на
-                  замовлення. До нас можна завжди <span class="underline text-gray-800 dark:text-slate-300">звернутися
-                    за допомогою</span> у
-                  підборі відповідного варіанта меблевої
-                  продукції для свого дизайну інтер'єру.
-                </p>
-                <dl class="mt-6 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-6 ">
-                  <div class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600 orange-700 h-fit">
-                    <div class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/20 rounded-lg p-3 ">
-                      <p
-                        class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
-                        Кухні
-                      </p>
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-description-collapse="close"
-                        class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200  cursor-pointer transition-all rotate-180">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </div>
-                    <div class="grid  grid-rows-[1fr] h-fit overflow-hidden transition-all">
-                      <div class="overflow-hidden">
-                        <p
-                          class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
-                          SonoMebli здатна створити кухню вашої мрії, яка буде
-                          поєднувати у собі красу та зручність
-                          використання
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600 orange-700 h-fit">
-                    <div class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/10 rounded-lg p-3 ">
-                      <p
-                        class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
-                        Меблі для ванної кімнати
-                      </p>
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-description-collapse="close"
-                        class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200  cursor-pointer transition-all rotate-180">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </div>
-                    <div class="grid  grid-rows-[1fr] h-fit overflow-hidden transition-all">
-                      <div class="overflow-hidden">
-                        <p
-                          class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
-                          Відмінне рішення для тих, хто хоче максимально
-                          ефективно
-                          використовувати простір і створити унікальний стиль у
-                          ванній кімнаті.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600  dark:border-slate-600orange-700 h-fit">
-                    <div class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/10 rounded-lg p-3 ">
-                      <p
-                        class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
-                        Столи
-                      </p>
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-description-collapse="open"
-                        class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200  cursor-pointer transition-all">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </div>
-                    <div class="grid  grid-rows-[0fr] h-fit overflow-hidden transition-all">
-                      <div class="overflow-hidden">
-                        <p
-                          class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
-                          Наша компанія виготовить стіл будь-якої форми та
-                          призначення, що відповідає індивідуальним
-                          потребам та особливостям оформлення інтер'єру. </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600 orange-700 h-fit">
-                    <div class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/10 rounded-lg p-3 ">
-                      <p
-                        class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
-                        Шафи
-                      </p>
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-description-collapse="open"
-                        class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200  cursor-pointer transition-all">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </div>
-                    <div class="grid  grid-rows-[0fr] h-fit overflow-hidden transition-all">
-                      <div class="overflow-hidden">
-                        <p
-                          class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
-                          Шафи на замовлення – стандартні та не стандартні
-                          моделі
-                          різного розміру та стилю, які ідеально
-                          впишуться до спальні або передпокою </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600  orange-700 h-fit">
-                    <div class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/10 rounded-lg p-3 ">
-                      <p
-                        class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
-                        Шафи купе
-                      </p>
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-description-collapse="open"
-                        class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200  cursor-pointer transition-all">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </div>
-                    <div class="grid  grid-rows-[0fr] h-fit overflow-hidden transition-all">
-                      <div class="overflow-hidden">
-                        <p
-                          class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
-                          Шафи-купе - зберігаємо місце у вашій кімнаті
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="border-2 justify-center rounded-lg border-slate-200 dark:border-slate-600 orange-700 h-fit">
-                    <div class="flex justify-center items-center  bg-slate-200/40 dark:bg-slate-950/10 rounded-lg p-3 ">
-                      <p
-                        class="rounded-lg  dark:text-orange-600 text-orange-700/90 flex-1 font-semibold leading-snug 2xl:text-lg ">
-                        Гардеробні
-                      </p>
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-description-collapse="open"
-                        class="2xl:w-8 2xl:h-8 h-7 w-7 self-center dark:text-gray-200  cursor-pointer transition-all">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </div>
-                    <div class="grid  grid-rows-[0fr] h-fit overflow-hidden transition-all">
-                      <div class="overflow-hidden">
-                        <p
-                          class="text-gray-600 py-2 pl-2 pr-1   border-slate-200 dark:text-gray-200 text-left  overflow-hidden ">
-                          Гардеробні системи на замовлення, щоб усі речі знайшли
-                          своє місце.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </dl>
-              </div>
-              <div id="description_gallery" class="grid grid-cols-2 grid-rows-2 gap-2 md:gap-4 ">
-                <a class="overflow-hidden rounded-lg" href="/images_gal/1.png" data-pswp-width="1500" data-pswp-height="1300" >
-                  <img
-                    class="w-full h-full object-cover aspect-square rounded-lg bg-gray-100 hover:scale-110 transition-all hover:opacity-80"
-                    src="/images_gal/1.png" />
-                </a>
-                <a class="overflow-hidden rounded-lg" href="/images_gal/2.png" data-pswp-width="1500" data-pswp-height="1300">
-                  <img
-                    class="w-full h-full object-cover aspect-square rounded-lg bg-gray-100 hover:scale-110 transition-all hover:opacity-80"
-                    src="/images_gal/2.png" />
-                </a>
-                <a class="overflow-hidden rounded-lg" href="/images_gal/3.png" data-pswp-width="1500" data-pswp-height="1300">
-                  <img
-                    class="w-full h-full object-cover aspect-square rounded-lg bg-gray-100 hover:scale-110 transition-all hover:opacity-80"
-                    src="/images_gal/3.png" />
-                </a>
-                <a class="overflow-hidden rounded-lg" href="/images_gal/4.png" data-pswp-width="1500" data-pswp-height="1300">
-                  <img
-                    class="w-full h-full object-cover aspect-square rounded-lg bg-gray-100 hover:scale-110 transition-all hover:opacity-80"
-                    src="/images_gal/4.png" />
-                </a>
-              </div>
-  
-            </div>
-          </div>
-        </section>
+        </div>
+      </section>
+      <!-- MODALS INFO -->
+      <div
+        class="px-8 py-6 bg-green-400 text-white  justify-between rounded fixed w-screen bottom-0  modal-info modal-info_success hidden">
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-6" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
+          </svg>
+          <p>Успішно! Ми зв'яжемося з вами якнайшвидше</p>
+        </div>
+        <button class="text-green-100 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="px-8 py-6 bg-red-400 text-white  justify-between rounded fixed w-screen bottom-0  modal-info modal-info_error hidden">
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-6" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+              clip-rule="evenodd" />
+          </svg>
+          <p> Спробуйте ще раз надіслати або перезавантажити сторінку </p>
+        </div>
+        <button class="text-red-100 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
       <!-- SECTION  CTA/MODAL-->
       <div class="cta__modal hidden ">
         <div
@@ -464,10 +487,10 @@
             якнайшвидше </p>
           <form class="quickform" action>
             <div class="flex max-w-full">
-              <input type="tel"
+              <input name="tel"
                 class="bg-zinc-50 rounded-bl-lg outline-none  p-4 dark:bg-slate-900 dark:text-slate-300 border-r-2 border-slate-200 dark:border-slate-700 w-1/2"
                 placeholder="+380" required>
-              <input type="name"
+              <input name="name"
                 class="bg-zinc-50 rounded-bl-lg outline-none border-none p-4 dark:bg-slate-900 dark:text-slate-300 w-1/2"
                 placeholder="Iм'я">
             </div>
@@ -517,53 +540,42 @@
             <div class="swiper-slide">
               <div class="swiper-slide__wrapper ">
                 <div class="slide__image swiper-slide__1">
-                </a>
-                <a href="/img_slider/kitchen.jpg" data-pswp-width="4454" data-pswp-height="3648" >
-                  <img
-                    src="/img_slider/kitchen.jpg" />
-                </a>
+                  </a>
+                  <a href="/img_slider/kitchen.jpg" data-pswp-width="4454" data-pswp-height="3648">
+                    <img src="/img_slider/kitchen.jpg" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/kuhna/1.jpg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/kuhna/1.jpg" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/kuhna/1.jpg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/kuhna/1.jpg" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/kuhna/2.jpg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/kuhna/2.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kuhna/3.jpg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/kuhna/3.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kuhna/4.jpg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/kuhna/4.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kuhna/5.jpg" data-pswp-width="600" data-pswp-height="1267">
-                  <img
-                  src="/preview_imgs/kuhna/5.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kuhna/6.jpg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/kuhna/6.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kuhna/10.jpeg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/kuhna/10.jpeg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kuhna/11.jpeg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/kuhna/11.jpeg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kuhna/12.jpg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/kuhna/12.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kuhna/13.jpg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/kuhna/13.jpg" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/kuhna/2.jpg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/kuhna/2.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kuhna/3.jpg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/kuhna/3.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kuhna/4.jpg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/kuhna/4.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kuhna/5.jpg" data-pswp-width="600" data-pswp-height="1267">
+                    <img src="/preview_imgs/kuhna/5.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kuhna/6.jpg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/kuhna/6.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kuhna/10.jpeg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/kuhna/10.jpeg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kuhna/11.jpeg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/kuhna/11.jpeg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kuhna/12.jpg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/kuhna/12.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kuhna/13.jpg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/kuhna/13.jpg" />
+                  </a>
                 </div>
                 <div class="slide__description">
                   <div class="slide__description-title">
@@ -593,61 +605,50 @@
                     підкреслити ідеальні концепції в інтер'єрі та статус
                     власника, не переплачуючи за продукцію відомих фірм.
                   </article>
-                  <i  data-gallery-open="1"  class="slide__description-watch"> Дивитись </i>
+                  <i data-gallery-open="1" class="slide__description-watch"> Дивитись </i>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="swiper-slide__wrapper">
-                <div class="slide__image swiper-slide__5">
-                </a>
-                <a href="/img_slider/kupe.webp" data-pswp-width="960" data-pswp-height="772" >
-                  <img
-                    src="/img_slider/kupe.webp" />
-                </a>
+                <div class="slide__image swiper-slide__2">
+                  </a>
+                  <a href="/img_slider/kupe.webp" data-pswp-width="960" data-pswp-height="772">
+                    <img src="/img_slider/kupe.webp" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/kupe/1.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/kupe/1.jpg" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/kupe/1.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/kupe/1.jpg" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/kupe/2.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/kupe/2.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kupe/3.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/kupe/3.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kupe/4.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/kupe/4.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kupe/5.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/kupe/5.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kupe/6.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/kupe/6.jpg" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/kupe/2.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/kupe/2.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kupe/3.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/kupe/3.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kupe/4.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/kupe/4.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kupe/5.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/kupe/5.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kupe/6.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/kupe/6.jpg" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/kupe/7.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/kupe/7.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kupe/8.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/kupe/8.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kupe/9.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/kupe/9.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/kupe/10.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/kupe/10.jpg" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/kupe/7.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/kupe/7.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kupe/8.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/kupe/8.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kupe/9.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/kupe/9.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/kupe/10.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/kupe/10.jpg" />
+                  </a>
                 </div>
 
                 <div class="slide__description">
@@ -673,33 +674,27 @@
             <div class="swiper-slide">
               <div class="swiper-slide__wrapper">
                 <div class="slide__image swiper-slide__3">
-                </a>
-                <a href="/img_slider/garderob.jpg" data-pswp-width="1650" data-pswp-height="1315" >
-                  <img
-                    src="/img_slider/garderob.jpg" />
-                </a>
+                  </a>
+                  <a href="/img_slider/garderob.jpg" data-pswp-width="1650" data-pswp-height="1315">
+                    <img src="/img_slider/garderob.jpg" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/garderob/1.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/garderob/1.jpg" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/garderob/1.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/garderob/1.jpg" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/garderob/2.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/garderob/2.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/garderob/3.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/garderob/3.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/garderob/4.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/garderob/4.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/garderob/5.png" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/garderob/5.png" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/garderob/2.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/garderob/2.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/garderob/3.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/garderob/3.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/garderob/4.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/garderob/4.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/garderob/5.png" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/garderob/5.png" />
+                  </a>
 
 
                 </div>
@@ -720,60 +715,49 @@
                     спроектовані та виготовлені відповідно до індивідуальних потреб клієнта, габаритів приміщення та
                     бюджету.
                   </article>
-                  <i data-gallery-open="3"  class="slide__description-watch"> Дивитись </i>
+                  <i data-gallery-open="3" class="slide__description-watch"> Дивитись </i>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="swiper-slide__wrapper">
                 <div class="slide__image swiper-slide__4">
-                </a>
-                <a href="/img_slider/vanna2.webp" data-pswp-width="1167" data-pswp-height="625" >
-                  <img
-                    src="/img_slider/vanna2.webp" />
-                </a>
+                  </a>
+                  <a href="/img_slider/vanna2.webp" data-pswp-width="1167" data-pswp-height="625">
+                    <img src="/img_slider/vanna2.webp" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/vanna/1.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/vanna/1.jpg" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/vanna/1.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/vanna/1.jpg" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/vanna/2.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/vanna/2.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/vanna/3.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/vanna/3.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/vanna/4.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/vanna/4.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/vanna/5.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/vanna/5.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/vanna/6.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/vanna/6.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/vanna/7.jpg" data-pswp-width="1000" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/shkaf/7.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/vanna/8.jpg" data-pswp-width="1000" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/vanna/8.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/vanna/9.jpg" data-pswp-width="1000" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/vanna/9.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/vanna/10.jpg" data-pswp-width="1000" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/vanna/10.jpg" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/vanna/2.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/vanna/2.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/vanna/3.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/vanna/3.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/vanna/4.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/vanna/4.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/vanna/5.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/vanna/5.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/vanna/6.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/vanna/6.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/vanna/7.jpg" data-pswp-width="1000" data-pswp-height="1500">
+                    <img src="/preview_imgs/shkaf/7.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/vanna/8.jpg" data-pswp-width="1000" data-pswp-height="1500">
+                    <img src="/preview_imgs/vanna/8.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/vanna/9.jpg" data-pswp-width="1000" data-pswp-height="1500">
+                    <img src="/preview_imgs/vanna/9.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/vanna/10.jpg" data-pswp-width="1000" data-pswp-height="1500">
+                    <img src="/preview_imgs/vanna/10.jpg" />
+                  </a>
 
 
                 </div>
@@ -787,56 +771,46 @@
                     та
                     виразним дизайном.
                   </article>
-                  <i data-gallery-open="4"  class="slide__description-watch"> Дивитись </i>
+                  <i data-gallery-open="4" class="slide__description-watch"> Дивитись </i>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="swiper-slide__wrapper">
                 <div class="slide__image swiper-slide__5">
-                </a>
-                <a href="/img_slider/shkaf.jpg" data-pswp-width="1003" data-pswp-height="632" >
-                  <img
-                    src="/img_slider/shkaf.jpg" />
-                </a>
+                  </a>
+                  <a href="/img_slider/shkaf.jpg" data-pswp-width="1003" data-pswp-height="632">
+                    <img src="/img_slider/shkaf.jpg" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/shkaf/1.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/shkaf/1.jpg" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/shkaf/1.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/shkaf/1.jpg" />
+                  </a>
 
-                <a class="hidden" href="/preview_imgs/shkaf/2.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/shkaf/2.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/shkaf/3.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/shkaf/3.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/shkaf/4.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/shkaf/4.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/shkaf/5.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/shkaf/5.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/shkaf/7.jpg" data-pswp-width="800" data-pswp-height="1500">
-                  <img
-                  src="/preview_imgs/shkaf/7.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/shkaf/8.jpg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/shkaf/8.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/shkaf/9.jpg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/shkaf/9.jpg" />
-                </a>
-                <a class="hidden" href="/preview_imgs/shkaf/10.jpg" data-pswp-width="1200" data-pswp-height="1000">
-                  <img
-                  src="/preview_imgs/shkaf/10.jpg" />
-                </a>
+                  <a class="hidden" href="/preview_imgs/shkaf/2.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/shkaf/2.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/shkaf/3.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/shkaf/3.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/shkaf/4.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/shkaf/4.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/shkaf/5.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/shkaf/5.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/shkaf/7.jpg" data-pswp-width="800" data-pswp-height="1500">
+                    <img src="/preview_imgs/shkaf/7.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/shkaf/8.jpg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/shkaf/8.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/shkaf/9.jpg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/shkaf/9.jpg" />
+                  </a>
+                  <a class="hidden" href="/preview_imgs/shkaf/10.jpg" data-pswp-width="1200" data-pswp-height="1000">
+                    <img src="/preview_imgs/shkaf/10.jpg" />
+                  </a>
                 </div>
 
                 <div class="slide__description">
@@ -846,10 +820,11 @@
 
                   <article class="slide__description-content">
                     Шафа - це функціональний та унікальний предмет меблів для зберігання різних предметів. Шафа для
-                    спальні, вітальні, кухні або ванної - на замовлення можна виготовити меблі будь-якого розміру, стилю та
-                    конфігурації.                 
+                    спальні, вітальні, кухні або ванної - на замовлення можна виготовити меблі будь-якого розміру, стилю
+                    та
+                    конфігурації.
                   </article>
-                  <i data-gallery-open="5"  class="slide__description-watch"> Дивитись </i>
+                  <i data-gallery-open="5" class="slide__description-watch"> Дивитись </i>
                 </div>
               </div>
             </div>
@@ -878,7 +853,7 @@
       <!-- SECTION CONTACTS -->
       <section id="contacts" class="relative z-10 overflow-hidden dark:bg-slate-900 bg-white py-20 lg:py-[120px]">
         <div class="container mx-auto">
-          <div class="-mx-4 flex flex-wrap lg:justify-between">
+          <div class="-mx-4 flex flex-wrap lg:justify-around">
             <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div class="mb-12 dark:text-slate-300 mx-4 max-w-[570px] lg:mb-0">
                 <span class="text-orange-700 mb-4 block text-base font-semibold">
@@ -890,7 +865,7 @@
                 </h2>
                 <p class="text-body-color mb-9 text-base leading-relaxed dark:text-slate-200">
                   Ви можете написати нам на електронну пошту або зателефонувати за
-                  телефону. Заповніть форму і ми відповімо вам як
+                  номером. Заповніть форму і ми відповімо вам як
                   можна швидше
                 </p>
                 <!-- <div class="mb-8 flex w-full max-w-[370px]">
@@ -942,27 +917,27 @@
             </div>
             <div class="w-full mx-4 px-4 lg:w-1/2 xl:w-5/12">
               <div class="relative dark:bg-slate-800 text-slate-300 rounded-lg bg-white p-8 shadow-lg sm:p-12">
-                <form>
+                <form class="mainform">
                   <div class="mb-6">
-                    <input required type="name" placeholder="Им'я"
+                    <input required name="name" placeholder="Им'я"
                       class="text-body-color dark:bg-sky-950/20 border-[f0f0f0] focus:border-orange-500 w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none" />
                   </div>
                   <div class="mb-6">
-                    <input type="email" placeholder="Email"
+                    <input name="email" placeholder="Email"
                       class="text-body-color dark:bg-sky-950/20 border-[f0f0f0] focus:border-orange-500 w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none" />
                   </div>
                   <div class="mb-6">
-                    <input required type="tel" placeholder="Телефон"
+                    <input required name="tel" placeholder="Телефон"
                       class="text-body-color dark:bg-sky-950/20 border-[f0f0f0] focus:border-orange-500 w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none" />
                   </div>
                   <div class="mb-6">
-                    <textarea type="message"  rows="6" placeholder="Додатково"
+                    <textarea name="message" rows="6" placeholder="Додатково"
                       class="text-body-color dark:bg-sky-950/20 border-[f0f0f0] focus:border-orange-500 w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"></textarea>
                   </div>
                   <div>
                     <button type="submit"
                       class="bg-orange-500 border-orange-500 w-full rounded border p-3 text-white transition hover:bg-opacity-90">
-                       Вiдправити! 
+                      Вiдправити!
                     </button>
                   </div>
                 </form>
@@ -1153,9 +1128,7 @@
           </div>
         </div>
       </section>
-
-      </main>
-  
-    </div>
-  </body>
+    </main>
+  </div>
+</body>
 </html>
