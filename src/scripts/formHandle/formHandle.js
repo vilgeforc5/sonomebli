@@ -1,7 +1,11 @@
 export function formHandle() {
     document.addEventListener("submit", (e) => {
         const form = e.target;
-
+        let button = form.querySelector("button");
+        button.disabled = true;
+        setTimeout(() => {
+            button.disabled = false;
+        }, 2500)
         fetch("formHandling.php", {
             method: "POST",
             body: new FormData(form),
@@ -11,35 +15,41 @@ export function formHandle() {
         })
         .then (() => {
             console.log("yep")
-            handleError(form)
+            handleSuccess(form)
+            
         })
         .catch((r) => {
             console.log("err");
             handleError(form)
-        });
+        })
 
         e.preventDefault();
-    });
+    })
 }
 
+
 function handleError(form) {
-    if(form.classList.contains("quickform")) {
-        console.log("quick")
-
-
-    } else if (form.classList.contains("mainform")){
-        console.log("main")
-    }
-
+    let modalError = document.querySelector(".modal-info_error");
+    modalError.classList.toggle("hidden")
+    setTimeout(() => {
+        modalError.classList.toggle("hidden")
+    }, 2000)
 }
 
 function handleSuccess(form) {
-    if(form.classList.contains("quickform")) {
-        console.log("quick")
+    let modalSucess = document.querySelector(".modal-info_success");
+    modalSucess.classList.toggle("hidden")
+    setTimeout(() => {
+        modalSucess.classList.toggle("hidden")
+    }, 2000)
+    if(form.closest(".cta__modal")) {
+        form.closest(".cta__modal").classList.add("animate-fade-out")
+        form.closest(".cta__modal").addEventListener("animationend", () => {
+            form.closest(".cta__modal").classList.add("hidden")
+        }, { once: true })
 
-
-    } else if (form.classList.contains("mainform")){
-        console.log("main")
     }
+
+
 
 }
