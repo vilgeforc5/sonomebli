@@ -31,7 +31,45 @@ export function GallerySwider() {
     showAnimationDuration: 500,
     padding: { top: 20, bottom: 20, left: 0, right: 0 },
   });
+
+  const lightbox2 = new PhotoSwipeLightbox({
+    gallery: ".swiper-slide__2",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+    showAnimationDuration: 500,
+    padding: { top: 20, bottom: 20, left: 0, right: 0 },
+  });
+
+  const lightbox3 = new PhotoSwipeLightbox({
+    gallery: ".swiper-slide__3",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+    showAnimationDuration: 500,
+    padding: { top: 20, bottom: 20, left: 0, right: 0 },
+  });
+
+  const lightbox4 = new PhotoSwipeLightbox({
+    gallery: ".swiper-slide__4",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+    showAnimationDuration: 500,
+    padding: { top: 20, bottom: 20, left: 0, right: 0 },
+  });
+
+  const lightbox5 = new PhotoSwipeLightbox({
+    gallery: ".swiper-slide__5",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+    showAnimationDuration: 500,
+    padding: { top: 20, bottom: 20, left: 0, right: 0 },
+  });
+
+
   lightbox.init();
+  lightbox2.init();
+  lightbox3.init();
+  lightbox4.init();
+  lightbox5.init();
 
   document.querySelector("#gallery").addEventListener("click", (e) => {
     let toggleOpen = e.target.dataset.galleryOpen;

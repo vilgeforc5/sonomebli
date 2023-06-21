@@ -33,7 +33,7 @@ export function modalCTA() {
         const observer = new IntersectionObserver(callback, options);
         observer.observe(target);
     }
-    // createObserver(cta, callback);
+    createObserver(cta, callback);
 
 }
 
