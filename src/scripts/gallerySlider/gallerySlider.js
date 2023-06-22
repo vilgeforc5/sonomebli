@@ -15,10 +15,10 @@ export function GallerySwider() {
       prevEl: ".swiper-button-prev",
     },
     speed: 500,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: true
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+    },
     modules: [Autoplay, Navigation],
     loop: true,
   };

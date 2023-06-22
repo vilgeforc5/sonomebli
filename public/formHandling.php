@@ -5,7 +5,6 @@
   $visitor_email = $_POST['email'];
   $message_form = $_POST['message'];
 
-  $to = "vilgeforc5@gmail.com";
   $subject = "SONOMEBLI ";
   $subject .= date();
 
@@ -15,5 +14,8 @@
   $message .= "Message: ".$message_form."\n";
 
 
-  mail($to,$subject,$message);
+  mail("vilgeforc5@gmail.com",$subject,$message);
+  mail("Ecomfurnishop@gmail.com",$subject,$message);
+  mail("sonomebli@gmail.com",$subject,$message);
+
 ?>

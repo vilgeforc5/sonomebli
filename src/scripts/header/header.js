@@ -32,16 +32,11 @@ export function Header() {
 
 
         } else {
-            console.log(2)
-
             menu.classList.remove("animate-slit-in-vertical")
 
             menu.classList.add("animate-slit-out-vertical")
+            setTimeout(()=>menu.classList.add("hidden"), 500)
 
-            menu.addEventListener("animationend" , () => {
-                menu.classList.add("hidden")
-                console.log(2)
-            } , {once: true})
         }
     })
 

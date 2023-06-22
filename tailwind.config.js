@@ -15,8 +15,10 @@ export default {
     "blur-sm",
     "animate-blur",
     "animate-blur-out",
-    "slit-out-vertical",
-    "slit-in-vertical",
+    "animate-slit-out-vertical",
+    "animate-slit-out-vertical",
+    "animate-slit-in-vertical",
+    "animate-slit-in-vertical",
     "rotate-180",
     "grid-rows-[1fr]"
 
