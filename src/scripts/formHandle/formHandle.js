@@ -6,7 +6,7 @@ export function formHandle() {
         setTimeout(() => {
             button.disabled = false;
         }, 2500)
-        fetch("formHandling.php", {
+        fetch("formHandling.php123", {
             method: "POST",
             body: new FormData(form),
         })
@@ -14,12 +14,10 @@ export function formHandle() {
             if (! r.ok ) return new Error("Bad status")
         })
         .then (() => {
-            console.log("yep")
             handleSuccess(form)
             
         })
         .catch((r) => {
-            console.log("err");
             handleError(form)
         })
 
