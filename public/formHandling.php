@@ -6,7 +6,7 @@
   $message_form = $_POST['message'];
 
   $subject = "SONOMEBLI ";
-  $subject .= date();
+  $subject .= date('Y-m-d H:i:s');
 
   $message = "Имя: ". $name ."\n";
   $message .= "Номер: ".$tel."\n";
